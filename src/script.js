@@ -19,18 +19,18 @@ bxGrid.addEventListener('click',()=>{
 // add event mouseover hover light mode
 bxGrid.addEventListener('mouseover',()=>{
     if (document.documentElement.className === "scroll-smooth dark") {
-        bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg (1).hover.png"
+        bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg (1).hover.png"
     } else {
-        bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg.hover.png"
+        bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg.hover.png"
     }
 })
 
 // add event mouseout hover light mode
 bxGrid.addEventListener('mouseout',()=>{
     if (document.documentElement.className === "scroll-smooth dark") {
-        bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg (1).png"
+        bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg (1).png"
     } else {
-        bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg.png"
+        bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg.png"
     }
 })
 
@@ -58,18 +58,18 @@ function mbClose(y=0) {
 // add event mouseover hover light mode
 bxX.addEventListener('mouseover',()=>{
     if (document.documentElement.className === "scroll-smooth dark") {
-        bxX.children[0].src = "image/mobile/bx-x.svg.hover (1).png"
+        bxX.children[0].src = "src/image/mobile/bx-x.svg.hover (1).png"
     } else {
-        bxX.children[0].src = "image/mobile/bx-x.svg.hover.png"
+        bxX.children[0].src = "src/image/mobile/bx-x.svg.hover.png"
     }
 })
 
 // add event mouseout hover light mode
 bxX.addEventListener('mouseout',()=>{
     if (document.documentElement.className === "scroll-smooth dark") {
-        bxX.children[0].src = "image/mobile/bx-x.svg (1).png"
+        bxX.children[0].src = "src/image/mobile/bx-x.svg (1).png"
     } else {
-        bxX.children[0].src = "image/mobile/bx-x.svg.png"
+        bxX.children[0].src = "src/image/mobile/bx-x.svg.png"
     }
 })
 
@@ -78,18 +78,18 @@ moon.addEventListener('click',()=>{
     document.documentElement.classList.add('dark')
     sun.classList.remove('hidden')
     moon.classList.add('hidden')
-    bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg (1).png"
-    bxX.children[0].src = "image/mobile/bx-x.svg (1).png"
+    bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg (1).png"
+    bxX.children[0].src = "src/image/mobile/bx-x.svg (1).png"
 })
 
 // add event mouseover hover light mode
 moon.addEventListener('mouseover',()=>{
-    moon.children[0].src = 'image/mobile/bx-moon.svg.hover.png'
+    moon.children[0].src = 'src/image/mobile/bx-moon.svg.hover.png'
 })
 
 // add event mouseout hover light mode
 moon.addEventListener('mouseout',()=>{
-    moon.children[0].src = 'image/mobile/bx-moon.svg.png'
+    moon.children[0].src = 'src/image/mobile/bx-moon.svg.png'
 })
 
 // add event dark mode
@@ -97,26 +97,26 @@ sun.addEventListener('click',()=>{
     document.documentElement.classList.remove('dark')
     moon.classList.remove('hidden')
     sun.classList.add('hidden')
-    bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg.png"
-    bxX.children[0].src = "image/mobile/bx-x.svg.png" 
+    bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg.png"
+    bxX.children[0].src = "src/image/mobile/bx-x.svg.png" 
 })
 
 // add event mouseover hover dark mode
 sun.addEventListener('mouseover',()=>{
-    sun.children[0].src = 'image/mobile/bx-sun.svg.hover.png'
+    sun.children[0].src = 'src/image/mobile/bx-sun.svg.hover.png'
 })
 
 // add event mouseout hover dark mode
 sun.addEventListener('mouseout',()=>{
-    sun.children[0].src = 'image/mobile/bx-sun.svg.png'
+    sun.children[0].src = 'src/image/mobile/bx-sun.svg.png'
 })
 
 // check  matchMedia darkmode
 if (darkMode) {
     moon.classList.add('hidden')
     document.documentElement.classList.add('dark')
-    bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg (1).png"
-    bxX.children[0].src = "image/mobile/bx-x.svg (1).png"
+    bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg (1).png"
+    bxX.children[0].src = "src/image/mobile/bx-x.svg (1).png"
 
 } else {
     sun.classList.add('hidden')
@@ -131,15 +131,15 @@ window.matchMedia('(prefers-color-scheme: dark)').onchange = function (e) {
         document.documentElement.classList.add('dark')
         moon.classList.add('hidden')
         sun.classList.remove('hidden')
-        bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg (1).png"
-        bxX.children[0].src = "image/mobile/bx-x.svg (1).png"
+        bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg (1).png"
+        bxX.children[0].src = "src/image/mobile/bx-x.svg (1).png"
 
     } else {
         document.documentElement.classList.remove('dark')
         sun.classList.add('hidden')
         moon.classList.remove('hidden')
-        bxGrid.children[0].src = "image/mobile/bx-grid-alt.svg.png"
-        bxX.children[0].src = "image/mobile/bx-x.svg.png" 
+        bxGrid.children[0].src = "src/image/mobile/bx-grid-alt.svg.png"
+        bxX.children[0].src = "src/image/mobile/bx-x.svg.png" 
     }
 }
 
@@ -299,18 +299,18 @@ function slideDesktop() {
 function giftLove(e) {
     console.log(e.children[0]);
     if (e.children[0].getAttribute('data-active') === "") {
-        e.children[0].src = "image/mobile/bxs--heart.png"
+        e.children[0].src = "src/image/mobile/bxs--heart.png"
         e.children[0].setAttribute('data-active',"active")
     }else if (e.children[0].getAttribute('data-active') === "active") {
-        e.children[0].src = "image/mobile/bx-heart.svg.png"
+        e.children[0].src = "src/image/mobile/bx-heart.svg.png"
         e.children[0].setAttribute('data-active',"")
     }
 
     if (e.children[0].getAttribute('data-active') === "false") {
-        e.children[0].src = "image/mobile/bxs--heart-w.png"
+        e.children[0].src = "src/image/mobile/bxs--heart-w.png"
         e.children[0].setAttribute('data-active',"true")
     }else if (e.children[0].getAttribute('data-active') === "true") {
-        e.children[0].src = "image/mobile/bx-heart.svg (1).png"
+        e.children[0].src = "src/image/mobile/bx-heart.svg (1).png"
         e.children[0].setAttribute('data-active',"false")
     }
 }

@@ -949,6 +949,10 @@ h1,h2,h3 {
   background-color: rgb(40 37 37 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'src\/image\/mobile\/Ellipse2\.png\'\)\] {
+  background-image: url('src/image/mobile/Ellipse2.png');
+}
+
 .bg-\[url\(\'image\/mobile\/Ellipse2\.png\'\)\] {
   background-image: url('image/mobile/Ellipse2.png');
 }
@@ -1350,6 +1354,21 @@ h1,h2,h3 {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:content-\[url\(\'src\/image\/desktop\/letter1\.png\'\)\] {
+    --tw-content: url('src/image/desktop/letter1.png');
+    content: var(--tw-content);
+  }
+
+  .lg\:content-\[url\(src\/image\/desktop\/footer1\.png\)\] {
+    --tw-content: url(src/image/desktop/footer1.png);
+    content: var(--tw-content);
+  }
+
+  .lg\:content-\[url\(src\/image\/desktop\/footer2\.png\)\] {
+    --tw-content: url(src/image/desktop/footer2.png);
+    content: var(--tw-content);
   }
 
   .lg\:content-\[url\(\'image\/desktop\/letter1\.png\'\)\] {
