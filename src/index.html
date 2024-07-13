@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- <meta name="color-scheme" content="dark light"> -->
+    <title>Christmas landing page</title>
+  </head>
+  <body class="relative overflow-auto bg-color-body dark:bg-color-body-dark">
+    <nav class="nav sticky top-0 duration-500">
+      <div class="flex justify-between h-14 items-center px-6 lg:px-[10%]">
+        <div class="flex">
+          <a class="me-2" href="#">
+            <img src="image/mobile/img-logo.png" alt="img-logo">
+          </a>
+          <a href="#">
+            <h3 class="text-color-body-dark hover:text-color-red dark:text-color-body dark:hover:text-color-red-alt">Christmas</h3>
+          </a>
+        </div>
+        <div class="flex items-center ms-auto gap-4">
+          <div class="hidden text-color-body-dark dark:text-color-body lg:me-8 lg:flex lg:gap-12">
+            <a href="#" class="hover:text-color-red dark:hover:text-color-red-alt">Home</a>
+            <a href="#celebrate" class="hover:text-color-red dark:hover:text-color-red-alt">Celebrate</a>
+            <a href="#gifts" class="hover:text-color-red dark:hover:text-color-red-alt">Gifts</a>
+            <a href="#new" class="hover:text-color-red dark:hover:text-color-red-alt">New</a>
+          </div>
+          <button type="button" id="moon"><img src="image/mobile/bx-moon.svg.png" alt="bx-moon"></button>
+          <button type="button" id="sun"><img src="image/mobile/bx-sun.svg.png" alt="bx-sun"></button>
+          <a id="bx-grid" href="#" class="lg:hidden"><img src="image/mobile/bx-grid-alt.svg.png" alt="bx-grid"></a>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav toggle rounded-b-2xl mt-[-348px] duration-500">
+      <div class="h-[18.25rem] flex flex-col relative">
+        <img class="absolute top-0" src="image/mobile/nav 1.png" alt="nav-img">
+        <div class="flex justify-end h-[68px] mr-6">
+          <a id="bx-x" class="self-center" href="#"><img src="image/mobile/bx-x.svg.png" alt="x"></a>
+        </div>
+        <ul class="flex flex-col gap-6 text-center text-color-body-dark dark:text-color-body">
+          <li><a href="#" class="block hover:text-color-red dark:hover:text-color-red-alt" onclick="mbClose()">Home</a></li>
+          <li><a href="#mb-celebrate" class="block hover:text-color-red dark:hover:text-color-red-alt" onclick="mbClose(1134)">Celebrate</a></li>
+          <li><a href="#mb-gifts" class="block hover:text-color-red dark:hover:text-color-red-alt" onclick="mbClose(1759)">Gifts</a></li>
+          <li><a href="#mb-new" class="block hover:text-color-red dark:hover:text-color-red-alt" onclick="mbClose(2557)">New</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section class="mx-6 lg:mx-[10%]">
+      <div class="mt-[78px] flex flex-col gap-5 items-center lg:mt-[136px] lg:flex-row lg:gap-[18px]">
+        <div class="lg:w-1/2">
+          <img src="image/mobile/home.png" alt="home" class="lg:hidden">
+          <img src="image/desktop/home.png" alt="home" class="hidden lg:block lg:mx-auto">
+        </div>
+        <div class="text-center text-color-body-dark dark:text-color-body lg:text-start lg:w-1/2">
+          <h1 class="text-2xl lg:text-[40px] lg:leading-[140%]">Merry Christmas and Happy New Year!</h1>
+          <p class="text-sm mt-3 lg:text-base lg:w-[70%]">Christmas and a new year is about to begin, all good wishes and successes.</p>
+          <button type="button" class="mt-10 w-[210px] h-[63px] border-none rounded-[64px] bg-color-red dark:bg-color-red-alt text-color-body">Get Started</button>
+        </div>
+      </div>
+      <div class="flex flex-col gap-12 mt-20 items-center lg:mt-32 lg:gap-14">
+        <div class=" text-color-body-dark dark:text-color-body text-center">
+          <h2 class="text-xl lg:text-2xl">Start Giving This <br>
+            Christmas</h2>
+        </div>
+        <div class="grid grid-cols-2 gap-y-10 gap-x-7 text-color-body-dark dark:text-color-body lg:grid-cols-3 lg:gap-x-32">
+          <div class="flex flex-col items-center text-center">
+            <img src="image/mobile/giving1.png" alt="giving1" class="lg:hidden">
+            <img src="image/desktop/giving1.png" alt="giving1" class="hidden lg:block">
+            <h3 class="text-base lg:text-xl">Surprise gifts</h3>
+            <p class="text-sm">They are the best gifts there is.</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img src="image/mobile/giving2.png" alt="giving2" class="lg:hidden">
+            <img src="image/desktop/giving2.png" alt="giving2" class="hidden lg:block">
+            <h3 class="text-base lg:text-xl">Ornaments</h3>
+            <p class="text-sm">Give a moment to decorate</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img src="image/mobile/giving3.png" alt="giving3" class="lg:hidden">
+            <img src="image/desktop/giving3.png" alt="giving3" class="hidden lg:block">
+            <h3 class="text-base lg:text-xl">Lots of love</h3>
+            <p class="text-sm">Give away feelings that last forever</p>
+          </div>
+        </div>
+      </div>
+      <div id="celebrate" class="mt-20 flex flex-col gap-6 items-center lg:flex-row lg:justify-center lg:gap-20">
+        <div class="text-color-body-dark dark:text-color-body flex flex-col gap-6 text-center lg:text-start lg:w-[40%] lg:mx-[2.5%]">
+          <h2 class="text-xl lg:text-2xl">Celebrate With A <br>
+            Lot Of Love</h2>
+          <p class="text-sm mx-[7.5%] lg:mx-0 lg:text-base">In this holidays, celebrate with much love and peace, offering many blessings to our loved ones, friends and neighbors, wishing them a good Christmas message.</p>
+          <button type="button" class="w-[221px] h-[55px] rounded-[64px] border-none bg-color-red dark:bg-color-red-alt mx-auto text-color-body lg:mx-0">Send Good Wishes</button>
+        </div>
+        <div>
+          <img src="image/mobile/celebrate 1.png" alt="celebrate" class="lg:hidden">
+          <img src="image/desktop/celebrate 1.png" alt="celebrate" class="hidden lg:block">
+        </div>
+      </div>
+      <div id="gifts" class="mt-20 lg:mt-32 flex flex-col gap-12 lg:gap-16">
+        <div class="text-center">
+          <h2 class="text-xl lg:text-2xl text-color-title dark:text-color-title-color-dark">Share A Gift</h2>
+        </div>
+        <div class="grid grid-cols-2-w-200 place-content-center md:grid-cols-3-w-200 gap-6 md:gap-8 lg:gap-10">
+          <div class="rounded-xl bg-color-container dark:bg-color-container-dark shadow-[0_4px_8px_0_rgba(0,0,0,0.3)] flex flex-col p-4">
+            <div onclick="giftLove(this);" class="self-end cursor-pointer">
+              <img src="image/mobile/bx-heart.svg.png" alt="bx-heart" data-active="">
+            </div>
+            <img class="self-center lg:hidden" src="image/mobile/gift1 2.png" alt="Gingerbread">
+            <img class="self-center hidden lg:block" src="image/desktop/gift1 2.png" alt="Gingerbread">
+            <h3 class="self-start text-color-title text-base dark:text-color-title-color-dark">$15</h3>
+            <p class="self-start text-color-text text-sm dark:text-color-text-color-dark">Gingerbread</p>
+          </div>
+          <div class="rounded-xl bg-color-container dark:bg-color-container-dark shadow-[0_4px_8px_0_rgba(0,0,0,0.3)] flex flex-col p-4">
+            <div onclick="giftLove(this);" class="self-end cursor-pointer">
+              <img src="image/mobile/bx-heart.svg.png" alt="bx-heart" data-active="">
+            </div>
+            <img class="self-center lg:hidden" src="image/mobile/santa-claus-hat 1.png" alt="Santa Claus Hat">
+            <img class="self-center hidden lg:block" src="image/desktop/santa-claus-hat 1.png" alt="Santa Claus Hat">
+            <h3 class="self-start text-color-title text-base dark:text-color-title-color-dark">$22</h3>
+            <p class="self-start text-color-text text-sm dark:text-color-text-color-dark">Santa Claus Hat</p>
+          </div>
+          <div class="rounded-xl bg-color-container dark:bg-color-container-dark shadow-[0_4px_8px_0_rgba(0,0,0,0.3)] flex flex-col p-4">
+            <div onclick="giftLove(this);" class="self-end cursor-pointer">
+              <img src="image/mobile/bx-heart.svg.png" alt="bx-heart" data-active="">
+            </div>
+            <img class="self-center lg:hidden" src="image/mobile/gift3 2.png" alt="Christmas Tree">
+            <img class="self-center hidden lg:block" src="image/desktop/gift3 2.png" alt="Christmas Tree">
+            <h3 class="self-start text-color-title text-base dark:text-color-title-color-dark">$48</h3>
+            <p class="self-start text-color-text text-sm dark:text-color-text-color-dark">Christmas Tree</p>
+          </div>
+          <div class="rounded-xl bg-color-container dark:bg-color-container-dark shadow-[0_4px_8px_0_rgba(0,0,0,0.3)] flex flex-col p-4">
+            <div onclick="giftLove(this);" class="self-end cursor-pointer">
+              <img src="image/mobile/bx-heart.svg.png" alt="bx-heart" data-active="">
+            </div>
+            <img class="self-center lg:hidden" src="image/mobile/snowman 1.png" alt="snowman">
+            <img class="self-center hidden lg:block" src="image/desktop/snowman 1.png" alt="snowman">
+            <h3 class="self-start text-color-title text-base dark:text-color-title-color-dark">$35</h3>
+            <p class="self-start text-color-text text-sm dark:text-color-text-color-dark">Snowman</p>
+          </div>
+          <div class="rounded-xl bg-color-container dark:bg-color-container-dark shadow-[0_4px_8px_0_rgba(0,0,0,0.3)] flex flex-col p-4">
+            <div onclick="giftLove(this);" class="self-end cursor-pointer">
+              <img src="image/mobile/bx-heart.svg.png" alt="bx-heart" data-active="">
+            </div>
+            <img class="self-center lg:hidden" src="image/mobile/gift5 1.png" alt="Candy Stick">
+            <img class="self-center hidden lg:block" src="image/desktop/gift5 1.png" alt="Candy Stick">
+            <h3 class="self-start text-color-title text-base dark:text-color-title-color-dark">$12</h3>
+            <p class="self-start text-color-text text-sm dark:text-color-text-color-dark">Candy Stick</p>
+          </div>
+        </div>
+      </div>
+      <div id="new" class="mt-20 flex flex-col gap-12 items-center">
+        <div>
+          <h2 class="text-xl text-color-title dark:text-color-title-color-dark">New Gifts</h2>
+        </div>
+        <div class="flex w-[230px] lg:w-[818px] rounded-[12px] overflow-hidden shadow-[0_4px_8px_0_rgba(0,0,0,0.3)] lg:shadow-none">
+          <div class="con-slides flex lg:gap-16 ml-0 lg:ml-0 duration-700">
+            <div class="slide bg-[url('image/mobile/Ellipse2.png')] bg-color-container dark:bg-color-container-dark w-[230px] h-[277px] bg-no-repeat relative rounded-[12px] flex flex-col items-center justify-center gap-4 lg:border lg:dark:border-none">
+              <img src="image/mobile/gift4 1.png" alt="Reindeer">
+              <h2 class="text-xl text-color-title dark:text-color-title-color-dark">$95</h2>
+              <p class="text-color-text-light dark:text-color-text-color-dark text-[15px]">Reindeer</p>
+              <button onclick="giftLove(this)" type="button" class="absolute bottom-0 right-0 bg-color-red w-9 h-9 rounded-[4px_4px_12px_4px]">
+                <img src="image/mobile/bx-heart.svg (1).png" alt="bx-heart" data-active="false" class="m-auto">
+              </button>
+            </div>
+            <div class="slide bg-[url('image/mobile/Ellipse2.png')] bg-color-container dark:bg-color-container-dark w-[230px] h-[277px] bg-no-repeat relative rounded-[12px] flex flex-col items-center justify-center gap-4 lg:border lg:dark:border-none">
+              <img src="image/mobile/gift2 1.png" alt="Snow Globe">
+              <h2 class="text-xl text-color-title dark:text-color-title-color-dark">$20</h2>
+              <p class="text-color-text-light dark:text-color-text-color-dark text-[15px]">Snow Globe</p>
+              <button onclick="giftLove(this)" type="button" class="absolute bottom-0 right-0 bg-color-red w-9 h-9 rounded-[4px_4px_12px_4px]">
+                <img src="image/mobile/bx-heart.svg (1).png" class="m-auto" data-active="false" alt="bx-heart">
+              </button>
+            </div>
+            <div class="slide bg-[url('image/mobile/Ellipse2.png')] bg-color-container dark:bg-color-container-dark w-[230px] h-[277px] bg-no-repeat relative rounded-[12px] flex flex-col items-center justify-center gap-4 lg:border lg:dark:border-none">
+              <img src="image/mobile/gift1 1.png" alt="Sledge">
+              <h2 class="text-xl text-color-title dark:text-color-title-color-dark">$75</h2>
+              <p class="text-color-text-light dark:text-color-text-color-dark text-[15px]">Sledge</p>
+              <button onclick="giftLove(this)" type="button" class="absolute bottom-0 right-0 bg-color-red w-9 h-9 rounded-[4px_4px_12px_4px]">
+                <img src="image/mobile/bx-heart.svg (1).png" class="m-auto" data-active="false" alt="bx-heart">
+              </button>
+            </div>
+            <div class="slide bg-[url('image/mobile/Ellipse2.png')] bg-color-container dark:bg-color-container-dark w-[230px] h-[277px] bg-no-repeat relative rounded-[12px] flex flex-col items-center justify-center gap-4 lg:border lg:dark:border-none">
+              <img src="image/mobile/gift4.png" alt="Christmas Wreath">
+              <h2 class="text-xl text-color-title dark:text-color-title-color-dark">$18</h2>
+              <p class="text-color-text-light dark:text-color-text-color-dark text-[15px]">Christmas Wreath</p>
+              <button onclick="giftLove(this)" type="button" class="absolute bottom-0 right-0 bg-color-red w-9 h-9 rounded-[4px_4px_12px_4px]">
+                <img src="image/mobile/bx-heart.svg (1).png" class="m-auto" data-active="false" alt="bx-heart">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-dot lg:hidden">
+          <span class="dot w-3 h-3 cursor-pointer mx-0.5 bg-[#5D5656] rounded-full inline-block duration-700"></span>
+          <span class="dot w-3 h-3 cursor-pointer mx-0.5 bg-[#5D5656] rounded-full inline-block duration-700"></span>
+          <span class="dot lg:hidden w-3 h-3 cursor-pointer mx-0.5 bg-[#5D5656] rounded-full inline-block duration-700"></span>
+          <span class="dot lg:hidden w-3 h-3 cursor-pointer mx-0.5 bg-[#5D5656] rounded-full inline-block duration-700"></span>
+        </div>
+        <div class="dt-dot hidden lg:block">
+          <span class="dot w-3 h-3 cursor-pointer mx-0.5 bg-[#5D5656] rounded-full inline-block duration-700"></span>
+          <span class="dot w-3 h-3 cursor-pointer mx-0.5 bg-[#5D5656] rounded-full inline-block duration-700"></span>
+        </div>
+      </div>
+      <div class="mt-24 lg:mt-32 mx-auto p-[40px_24px_17px_24px] lg:p-[30px_120px] flex flex-col lg:flex-row lg:items-center lg:justify-center gap-4 lg:gap-16 xl:gap-28 bg-color-red dark:bg-color-container-dark rounded-[20px] lg:rounded-[32px] max-w-[320px] lg:max-w-full xl:w-[1280px]">
+        <div class="flex flex-col items-center gap-5 lg:w-[265px] xl:w-[350px]">
+          <h2 class="text-xl lg:text-4xl text-color-body text-center lg:text-start w-[116px] lg:w-full">Send Good 
+            Wishes!</h2>
+            <input type="text" name="message" id="message" class="w-full h-[55px] rounded-[64px] px-6 text-sm bg-color-body text-color-title dark:text-color-title-color-dark dark:bg-color-body-dark placeholder:text-color-text-light focus:outline-none focus:border-none" placeholder="Write your message">
+            <button type="button" class="w-full lg:w-[70%] xl:w-[50%] h-[55px] rounded-[64px] bg-color-title dark:bg-color-red text-color-body text-[15px] lg:self-start">Send Message</button>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="image/mobile/letter 1.png" alt="letter" class="lg:content-[url('image/desktop/letter1.png')] lg:w-full">
+        </div>
+      </div>
+      <div class="mt-20 lg:mt-36 sm:px-10 flex flex-col gap-20 lg:gap-28">
+        <div class="flex flex-col lg:flex-row lg:justify-between xl:justify-around gap-8">
+          <div class="flex flex-col gap-4 lg:gap-6">
+            <div class="flex items-center">
+              <img src="image/mobile/img-logo.png" alt="logo">
+              <h3 class="text-color-title dark:text-color-title-color-dark">Christmas</h3>
+            </div>
+            <p class="text-color-text dark:text-color-text-color-dark text-sm">This Christmas give <br> a lot of love</p>
+          </div>
+          <div class="flex flex-col gap-4 lg:gap-6">
+            <h3 class="text-color-title dark:text-color-title-color-dark text-base lg:text-xl">Our Services</h3>
+            <ul class="flex flex-col gap-3 text-color-text dark:text-color-text-color-dark">
+              <li>Pricing</li>
+              <li>Discounts</li>
+              <li>Shipping mode</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 lg:gap-6">
+            <h3 class="text-color-title dark:text-color-title-color-dark text-base lg:text-xl">Support</h3>
+            <ul class="flex flex-col gap-3 text-color-text dark:text-color-text-color-dark">
+              <li>FAQs</li>
+              <li>Support center</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 lg:gap-6">
+            <h3 class="text-color-title dark:text-color-title-color-dark text-base lg:text-xl">Available On</h3>
+            <div>
+              <img class="mt-3" src="image/mobile/aviable1.png" alt="google play">
+              <img class="mt-3" src="image/mobile/aviable2.png" alt="app store">
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-8 lg:mb-12">
+          <p class="text-color-text-light text-center text-xs">&copy; Bedimcode. All rigths reserved</p>
+        </div>
+      </div>
+      
+    </section>
+    <div class="z-[-33] absolute bottom-[450px] lg:bottom-14 right-[51px] lg:right-0 lg:left-[13%] xl:left-[17%] lg:content-[url(image/desktop/footer1.png)]"><img src="image/mobile/footer1.png" alt="footer1"></div>
+    <div class="z-[-33] absolute bottom-[160px] lg:bottom-[110px] right-0 lg:right-[5%] xl:right-[10%] lg:content-[url(image/desktop/footer2.png)]"><img src="image/mobile/footer2.png" alt="footer2"></div>
+     
+    <script src="script.js"></script>
+  </body>
+</html>
